@@ -1,0 +1,6 @@
+name,price,sale_price,description,origin,quantity,category_id,status,image
+Sourdough Bread,12.99,10.99,Authentic sourdough bread with crispy crust,usa,50,1,1,bread-1.jpg
+Chocolate Cake,25.99,22.99,Rich chocolate cake with creamy frosting,usa,20,2,1,cake-2.jpg
+Vanilla Pudding,8.50,7.25,Smooth vanilla pudding with caramel sauce,vn,30,3,1,pudding-1.jpg
+Organic Flour,5.99,0,High-quality organic baking flour,usa,100,4,1,flour-1.jpg
+Red Velvet Cupcake,3.99,3.50,Delicious red velvet cupcake with cream cheese frosting,vn,40,15,1,cupcake-1.jpg
