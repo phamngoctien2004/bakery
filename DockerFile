@@ -1,13 +1,16 @@
 FROM php:8.1-apache
 
-# Enable Apache mod_rewrite
+# Cài mysqli và các extension cần thiết
+RUN docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable mysqli
+
+# Bật mod_rewrite cho Apache
 RUN a2enmod rewrite
 
-# Copy mã nguồn vào container
+# Copy mã nguồn vào web root
 COPY . /var/www/html/
 
-# Copy file cấu hình Apache
-COPY ./apache-config.conf /etc/apache2/sites-available/000-default.conf
+# Copy cấu hình Apache hỗ trợ .htaccess (nếu có)
+COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
 
 # Phân quyền
 RUN chown -R www-data:www-data /var/www/html
