@@ -13,13 +13,13 @@ class Database
 
     // const DB_NAME = 'BCVZPDJiJg';
 
-    const HOST = '127.0.0.1:3308';
+    const HOST = 'yamanote.proxy.rlwy.net:25773';
 
     const USERNAME = 'root';
 
-    const PASSWORD = '';
+    const PASSWORD = 'CBGkKPKcismyCESauKwVLwdmSNCysdSw';
 
-    const DB_NAME = 'bakya';
+    const DB_NAME = 'railway';
 
 
     public function connect()
